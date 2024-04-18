@@ -5,3 +5,8 @@
   
   font-family: "Inter", sans-serif;
 }
+
+div > section {
+  display: flex;
+  /* gap: 50px; */
+}
