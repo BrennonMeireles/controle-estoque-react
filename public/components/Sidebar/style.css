@@ -1,0 +1,57 @@
+section > article {
+    display: flex;
+}
+
+article > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 30px;
+    padding: 25px;
+    height: 100vh;
+    list-style: none;
+    
+    border: 1px solid #8b8b8b;
+}
+
+article ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    font-size: 20px;
+    
+    gap: 15px;
+    height: 50px;
+    width: 250px;
+
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+article > ul h4 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+
+    padding-left: 15px;
+    color: #8B8B8B;
+}
+
+li > svg {
+    color: #000;
+    width: 30px;
+    height: auto;
+}
+
+article > ul > li:hover {
+    background: #5552F7;
+    color: #fff;
+    transition: 0.2s;
+}
+
+article > ul > li:hover svg {
+    color: #fff;
+    transition: 0.2s;
+}
