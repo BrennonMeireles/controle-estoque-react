@@ -45,13 +45,13 @@ div > .search-img-box {
     padding: 26px 10px;
 }
 
-div svg {
+div > svg {
     color: #8b8b8b;
     width: 30px;
     height: auto;
 }
 
-div svg:hover {
+div > svg:hover {
     color: blue;
     transition: 1s;
     font-weight: 100px;
