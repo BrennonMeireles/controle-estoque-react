@@ -1,8 +1,8 @@
-section > article {
+section > .sidebar {
     display: flex;
 }
 
-article > ul {
+.sidebar > .sidebar-btn {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -14,7 +14,7 @@ article > ul {
     border: 1px solid #8b8b8b;
 }
 
-article ul li {
+.sidebar .sidebar-btn li {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,7 +29,7 @@ article ul li {
     border-radius: 10px;
 }
 
-article > ul h4 {
+.sidebar > .sidebar-btn h4 {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
@@ -45,13 +45,13 @@ li > svg {
     height: auto;
 }
 
-article > ul > li:hover {
+.sidebar > .sidebar-btn > li:hover {
     background: #5552F7;
     color: #fff;
     transition: 0.2s;
 }
 
-article > ul > li:hover svg {
+.sidebar > .sidebar-btn > li:hover svg {
     color: #fff;
     transition: 0.2s;
 }

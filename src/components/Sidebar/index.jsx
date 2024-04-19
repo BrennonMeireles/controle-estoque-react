@@ -7,8 +7,8 @@ import "./style.css"
 export default function Sidebar() {
     return (
         <section>
-            <article>
-                <ul>
+            <article className="sidebar">
+                <ul className="sidebar-btn">
                     <li><LiaHomeSolid />Home</li>
                     <h4>INVENTORY</h4>
                     <li><BsBox />Products</li>
