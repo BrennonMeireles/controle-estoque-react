@@ -8,7 +8,7 @@ export default function Sidebar() {
         <section>
             <article className="sidebar">
                 <ul className="sidebar-btn">
-                    <li><LiaHomeSolid />Home</li>
+                    <li><LiaHomeSolid /> <a href="/">Home</a></li>
                     <h4>INVENTORY</h4>
                     <li><BsBox />Link</li>
                     <li><BsBox />New Products</li>
