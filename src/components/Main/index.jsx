@@ -1,6 +1,20 @@
 import "./style.css"
+import axios from "axios"
+import { useState, useEffect } from "react";
 
 export default function Main() {
+    const [produtos, setProdutos] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:3000/')
+        .then((res) => {
+            setProdutos(res.data);
+        })
+        .catch(error => {
+            console.error('Erro ao buscar produtos:', error);
+        });
+    }, [produtos])
+
     return (
         <main>
             <article>
@@ -20,20 +34,15 @@ export default function Main() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Product 1</td>
-                        <td>SKU123</td>
-                        <td>Brand A</td>
-                        <td>100</td>
+                    {produtos.map(produto => (
+                        <tr key={produto._id}>  
+                        <td><a href={`controle-estoque-react-omega.vercel.app/product/${produto._id}`}>{produto.nome}</a></td>
+                        <td>{produto.sku}</td>
+                        <td>{produto.marca}</td>
+                        <td>{produto.quantidade}</td>
                         <td>10</td>
                     </tr>
-                    <tr>
-                        <td>Product 2</td>
-                        <td>SKU456</td>
-                        <td>Brand B</td>
-                        <td>50</td>
-                        <td>5</td>
-                    </tr>
+                    ))}
                 </tbody>
 
             </table>
