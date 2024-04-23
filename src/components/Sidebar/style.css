@@ -55,3 +55,13 @@ li > svg {
     color: #fff;
     transition: 0.2s;
 }
+
+.sidebar > .sidebar-btn > li:hover a {
+    color: #fff;
+    transition: 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
