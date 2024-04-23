@@ -11,7 +11,7 @@ export default function Sidebar() {
                     <li><LiaHomeSolid /> <a href="/">Home</a></li>
                     <h4>INVENTORY</h4>
                     <li><BsBox />Link</li>
-                    <li><BsBox />New Products</li>
+                    <li><BsBox /><a href="/controle-estoque-react-omega.vercel.app/add-product">Add Product</a></li>
                 </ul>
             </article>
         </section>

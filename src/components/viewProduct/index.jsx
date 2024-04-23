@@ -1,5 +1,5 @@
 import "./style.css"
-import axios from "axios"
+import   axios from "axios"
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react"
 
@@ -48,8 +48,8 @@ export default function ViewProduct() {
                 <section>
                     <article className="banner-stock">
                         <div className="product-img">
-                            <img src="/src/assets/tenis-modelo.svg" alt="" />
-                            {/* img src={produto.imagem} alt="" /> */}
+                            {/* <img src="/src/assets/tenis-modelo.svg" alt="" /> */}
+                            <img src={produto.imagem} alt="" />
                         </div>
                         <div className="area-stock">
                             <div className="bar-code">
