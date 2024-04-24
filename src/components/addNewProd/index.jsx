@@ -75,7 +75,7 @@ export default function AddNew() {
             <section>
                 <article className="banner-stock">
                     <div className="product-img">
-                        <img src="/src/assets/upload_icon.svg" alt="" />
+                        <img width="50px" height="50px" src="/src/assets/upload_icon.svg" alt="imagem icon de upload" />
                         <input className="add-input-upload" type="text" name="imagem" value={produto.imagem} onChange={handleChange} placeholder="Paste here image URL" required />
                     </div>
                     <div className="area-stock">
