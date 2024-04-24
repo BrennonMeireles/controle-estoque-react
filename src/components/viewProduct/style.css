@@ -23,7 +23,7 @@ section > .banner-stock {
     border: 1px solid #8b8b8b;
     border-radius: 10px;
     padding: 30px 45px;
-    height: 425px;
+    height: 450px;
     margin-bottom: 60px;
 }
 
@@ -128,4 +128,9 @@ section > article {
 
 .bar-code {
     padding-bottom: 20px;
+}
+
+.product-img-view {
+    width: auto;
+    height: 100%;
 }
