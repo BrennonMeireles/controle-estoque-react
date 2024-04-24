@@ -96,7 +96,7 @@ export default function ViewProduct() {
                 <section>
                     <article className="banner-stock">
                         <div className="product-img">
-                            <img src={produto.imagem} alt="" />
+                            <img className="product-img-view" src={produto.imagem} alt="" />
                         </div>
                         <div className="area-stock">
                             <div className="bar-code">
