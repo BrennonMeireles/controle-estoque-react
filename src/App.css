@@ -5,3 +5,14 @@
   
   font-family: "Inter", sans-serif;
 }
+
+input, textarea {
+  font-family: Arial, sans-serif; /* mesma fonte do parágrafo */
+  font-size: 1  6px; /* mesmo tamanho de fonte */
+  color: #333; /* mesma cor de texto */
+  border: none;
+  background-color: transparent; /* fundo transparente */
+  padding: 5px 10px; /* preenchimento semelhante */
+  margin-bottom: 10px; /* mesma margem inferior */
+  margin: 0;
+}
