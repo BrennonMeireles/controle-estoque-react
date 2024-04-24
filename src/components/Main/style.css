@@ -5,7 +5,7 @@ main {
 
 main > article {
     display: flex;
-    padding: 30px 30px 30px 0px;
+    padding: 30px 30px 30px 0px;    
 }
 
 article > h1{
@@ -13,8 +13,9 @@ article > h1{
     font-size: 30px;
 }
 
-h1 > span {
+h1 > input {
     color: #5552F7;
+    font-size: 26px;
 }
 
 main > table {

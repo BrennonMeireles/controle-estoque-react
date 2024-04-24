@@ -1,36 +1,84 @@
-import "./style.css"
-import   axios from "axios"
+//originalllllll
+
+import "./style.css";
+import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
 export default function ViewProduct() {
-
-    const {id} = useParams();
-    const navigate = useNavigate(); // Adicione useNavigate aqui
+    const { id } = useParams();
+    const navigate = useNavigate();
     const [produto, setProduto] = useState(null);
+    const [edicaoProduto, setEdicaoProduto] = useState(null);
 
     useEffect(() => {
         axios.get(`http://localhost:3000/${id}`)
-        .then((res) => {
-            setProduto(res.data);
-        })
-    }, [id]); // Adicione id como dependência para reexecutar o efeito quando o ID mudar
+            .then((res) => {
+                setProduto(res.data);
+                setEdicaoProduto(res.data); // Inicializa o estado de edição com os valores atuais do produto
+            })
+            .catch((error) => {
+                console.error("Erro ao buscar produto:", error);
+            });
+    }, [id]);
+
+    const Quantidade = ({ qtdeProduto }) => {
+        let qtdeProdutos = qtdeProduto.quantidade;
+    
+        let statusText = '';
+        let statusStyle = {};
+    
+        if (qtdeProdutos == 0) {
+            statusText = 'sold off';
+            statusStyle = { color: '#800' };
+        } else if (qtdeProdutos <= 25) {
+            statusText = 'low stock';
+            statusStyle = { color: '#f00' };
+        } else if (qtdeProdutos <= 50) {
+            statusText = 'medium stock';
+            statusStyle = { color: '#ff0' };
+        } else {
+            statusText = 'full stock';
+            statusStyle = { color: '#0f0', fontWeight: 'bold' };
+        }
+    
+        return (
+            <h4 style={statusStyle}><span>{statusText}</span></h4>
+        );
+    }  
 
     const handleDelete = () => {
         if (!window.confirm("Você tem certeza que deseja excluir este produto?")) {
             return;
         }
-    
+
         axios.delete(`http://localhost:3000/${id}`)
             .then((res) => {
                 console.log("Produto deletado com sucesso:", res.data);
-                // Aqui você pode adicionar qualquer lógica adicional após a exclusão do produto, se necessário
-
                 navigate('/');
             })
             .catch((error) => {
                 console.error("Erro ao deletar produto", error);
             });
+    };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setEdicaoProduto({ ...edicaoProduto, [name]: value });
+    };
+
+    const handleAdjustStock = () => {
+        axios.put(`http://localhost:3000/${id}`, edicaoProduto)
+            .then((res) => {
+                console.log("Produto atualizado com sucesso:", res.data);
+                // Atualize o estado do produto para refletir as edições
+                setProduto(edicaoProduto);
+            })
+            .catch((error) => {
+                console.error("Erro ao atualizar produto:", error);
+            });
+
+            navigate('/');
     };
 
     return (
@@ -39,16 +87,15 @@ export default function ViewProduct() {
                 <article className="title">
                     <h1>
                         Nome
-                        <span> {produto.nome}</span>
+                        <input type="text" name="nome" value={edicaoProduto.nome} onChange={handleChange} />
                     </h1>
-                    <h2>SKU {produto.sku}</h2>
+                    <h2>SKU <input type="text" name="sku" value={edicaoProduto.sku} onChange={handleChange} /></h2>
                 </article>
             )}
             {produto && (
                 <section>
                     <article className="banner-stock">
                         <div className="product-img">
-                            {/* <img src="/src/assets/tenis-modelo.svg" alt="" /> */}
                             <img src={produto.imagem} alt="" />
                         </div>
                         <div className="area-stock">
@@ -61,28 +108,27 @@ export default function ViewProduct() {
                                 </div>
                                 <div className="data-stock">
                                     <h3>QUANTITY AT HAND</h3>
-                                    <p>{ produto.quantidade }</p>
-                                    <button>Adjust Stock</button>
-                                    <h4>Status <span>low stock</span></h4>
+                                    <input type="number" name="quantidade" value={edicaoProduto.quantidade} onChange={handleChange} />
+                                    <button onClick={handleAdjustStock}>Adjust Stock</button>
+                                    <h4>Status <Quantidade qtdeProduto={produto}  /></h4>
                                 </div>
                             </div>
                             <div className="action-buttons">
                                 <button className="btn-delete" onClick={handleDelete}>Delete Product</button>
-                                <button className="btn-add">Add Product</button>
                             </div>
                         </div>
                     </article>
-    
+
                     <article>
                         <ul className="list-product">
-                            <li>Purchase Cost<p>{ produto.preco }</p></li>
-                            <li>Brand<p>{ produto.marca }</p></li>
-                            <li>Color<p>{ produto.cor }</p></li>
-                            <li>Description<p className="description">{ produto.descricao }</p></li>
+                            <li>Purchase Cost<p><input type="text" name="preco" value={edicaoProduto.preco} onChange={handleChange} /></p></li>
+                            <li>Brand<p><input type="text" name="marca" value={edicaoProduto.marca} onChange={handleChange} /></p></li>
+                            <li>Color<p><input type="text" name="cor" value={edicaoProduto.cor} onChange={handleChange} /></p></li>
+                            <li>Description<p className="description"><textarea name="descricao" value={edicaoProduto.descricao} onChange={handleChange} /></p></li>
                         </ul>
                     </article>
                 </section>
             )}
         </main>
     );
-}    
+} 
