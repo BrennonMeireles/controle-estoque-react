@@ -65,18 +65,18 @@ export default function AddNew() {
             <article className="title">
                 <div className="div-input">
                     <label htmlFor="name">Name :</label>
-                    <input className="add-input" type="text" name="nome" value={produto.nome} onChange={handleChange} placeholder="Type name product" required />
+                    <input className="add-input" type="text" name="nome" value={produto.nome} onChange={handleChange} placeholder="Type the name product" required />
                 </div>
                 <div className="div-input">
                     <label className="sku-label" htmlFor="sku">SKU :</label>
-                    <input className="sku-input" type="text" name="sku" value={produto.sku} onChange={handleChange} placeholder="Type SKU product" required />
+                    <input className="sku-input" type="text" name="sku" value={produto.sku} onChange={handleChange} placeholder="Type the product SKU" required />
                 </div>
             </article>
             <section>
                 <article className="banner-stock">
                     <div className="product-img">
                         <img width="50px" height="50px" src="/src/assets/upload_icon.svg" alt="imagem icon de upload" />
-                        <input className="add-input-upload" type="text" name="imagem" value={produto.imagem} onChange={handleChange} placeholder="Paste here image URL" required />
+                        <input className="add-input-upload" type="text" name="imagem" value={produto.imagem} onChange={handleChange} placeholder="Paste here the image URL" required />
                     </div>
                     <div className="area-stock">
                         <div className="bar-code">
@@ -90,7 +90,7 @@ export default function AddNew() {
                                 <h3>QUANTITY AT HAND</h3>
                                 <div className="div-stock-input">
                                     <label htmlFor="estoque">Stock :</label>
-                                    <input className="add-input" type="text" name="quantidade" value={produto.quantidade} onChange={handleChange} placeholder="Type stock" required />
+                                    <input className="add-input" type="text" name="quantidade" value={produto.quantidade} onChange={handleChange} placeholder="Type the stock" required />
                                 </div>
                             </div>
                         </div>
@@ -105,19 +105,19 @@ export default function AddNew() {
                     <ul className="list-product">
                         <div className="div-input-list">
                             <label htmlFor="custo">Purchase Coust:</label>
-                            <input className="add-input" type="text" name="preco" value={produto.preco} onChange={handleChange} placeholder="Type purchase coust" required />
+                            <input className="add-input" type="text" name="preco" value={produto.preco} onChange={handleChange} placeholder="Type the purchase coust" required />
                         </div>
                         <div className="div-input-list">
                             <label htmlFor="color">Color :</label>
-                            <input className="add-input" type="text" name="cor" value={produto.cor} onChange={handleChange} placeholder="Type color product" required />
+                            <input className="add-input" type="text" name="cor" value={produto.cor} onChange={handleChange} placeholder="Type the color product" required />
                         </div>
                         <div className="div-input-list">
                             <label htmlFor="marca">Brand :</label>
-                            <input className="add-input" type="text" name="marca" value={produto.marca} onChange={handleChange} placeholder="Type brand" required />
+                            <input className="add-input" type="text" name="marca" value={produto.marca} onChange={handleChange} placeholder="Type the brand" required />
                         </div>
                         <div className="div-input-list">
                             <label htmlFor="descricao">Description :</label>
-                            <input className="add-input" type="text" name="descricao" value={produto.descricao} onChange={handleChange} placeholder="Type description" required />
+                            <input className="add-input" type="text" name="descricao" value={produto.descricao} onChange={handleChange} placeholder="Type the description" required />
                         </div>
                     </ul>
                 </article>
