@@ -1,6 +1,10 @@
 main {
     padding: 50px;
     width: 100vw;
+    border: 1px solid var(--grey-500);
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
 }
 
 main > article {
@@ -13,15 +17,13 @@ article > h1{
     font-size: 30px;
 }
 
-
-
 h1 > input {
-    color: #5552F7;
+    color: var(--blue-100);
     font-size: 26px;
 }
 
 h1 > span {
-    color: #5552F7;
+    color: var(--blue-100);
 }
 
 main > table {
@@ -29,17 +31,17 @@ main > table {
     height: auto;
     
     border-collapse: collapse;
-    border: 1px solid #8b8b8b;
+    border: 1px solid var(--grey-500);
     border-radius: 10px;
 }
 
 table > thead {
     width: 100%;
     
-    color: #8b8b8B;
+    color: var(--grey-500);
 
     background-color: #f0f0f0;
-    border-bottom: 1px solid #8b8b8b;
+    border-bottom: 1px solid var(--grey-500);
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -51,7 +53,7 @@ table > thead > tr > th {
 table > tbody > tr > td {
     font-size: 12px;
     height: 50px;
-    border-bottom: 1px solid #8b8b8b;
+    border-bottom: 1px solid var(--grey-500);
     text-align: center;
 }
 
