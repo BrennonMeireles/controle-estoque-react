@@ -6,7 +6,7 @@ nav {
     gap: 160px;
     align-items: center;
     padding: 25px;  
-    border: 1px solid #8b8b8b;
+    border: 1px solid var(--grey-500);
 
 }
 
@@ -22,7 +22,7 @@ nav > div {
     align-items: center;
     width: 800px;
     height: 50px;
-    border: 1px solid #8b8b8b;
+    border: 1px solid var(--grey-500);
     border-radius: 10px;
 }
 
@@ -34,7 +34,7 @@ div > input {
     /* background-color: none; */
 
     padding-left: 15px;
-    border-left: 1px solid #8b8b8b;
+    border-left: 1px solid var(--grey-500);
 }
 
 input:focus {
@@ -46,13 +46,13 @@ div > .search-img-box {
 }
 
 div > svg {
-    color: #8b8b8b;
+    color: var(--grey-500);
     width: 30px;
     height: auto;
 }
 
 div > svg:hover {
-    color: blue;
+    color: var(--blue-100);
     transition: 1s;
     font-weight: 100px;
 }
