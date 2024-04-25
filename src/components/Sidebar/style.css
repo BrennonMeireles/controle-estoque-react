@@ -10,8 +10,6 @@ section > .sidebar {
     padding: 25px;
     height: 100vh;
     list-style: none;
-    
-    border: 1px solid #8b8b8b;
 }
 
 .sidebar .sidebar-btn li {
@@ -36,32 +34,32 @@ section > .sidebar {
     letter-spacing: 0.05em;
 
     padding-left: 15px;
-    color: #8B8B8B;
+    color: var(--grey-500);
 }
 
 li > svg {
-    color: #000;
+    color: var(--black-100);
     width: 30px;
     height: auto;
 }
 
 .sidebar > .sidebar-btn > li:hover {
-    background: #5552F7;
-    color: #fff;
+    background: var(--blue-100);
+    color: var(--white-1000);
     transition: 0.2s;
 }
 
 .sidebar > .sidebar-btn > li:hover svg {
-    color: #fff;
+    color: var(--white-1000);
     transition: 0.2s;
 }
 
 .sidebar > .sidebar-btn > li:hover a {
-    color: #fff;
+    color: var(--white-1000);
     transition: 0.2s;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--black-100);
 }
