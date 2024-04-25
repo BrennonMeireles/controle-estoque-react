@@ -43,7 +43,7 @@
 
 div > .sku-label {
     font-size: 20px;
-    color: #8b8b8b;
+    color: var(--grey-500);
 }
 
 .section-addProd > section > article > .product-img {
