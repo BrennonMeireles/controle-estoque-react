@@ -13,9 +13,15 @@ article > h1{
     font-size: 30px;
 }
 
+
+
 h1 > input {
     color: #5552F7;
     font-size: 26px;
+}
+
+h1 > span {
+    color: #5552F7;
 }
 
 main > table {
