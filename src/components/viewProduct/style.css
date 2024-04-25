@@ -134,6 +134,12 @@ section > article {
     height: 50px;
 }
 
+button:hover{
+    background: var(--blue-500);
+    color: var(--white-1000);
+    transition: 0.2s;
+}
+
 .action-buttons {
     display: flex;
     justify-content: space-between;

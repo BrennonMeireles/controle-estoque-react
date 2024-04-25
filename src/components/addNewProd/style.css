@@ -12,6 +12,10 @@
 .section-addProd {
     padding: 100px 50px;
     width: 100vw;
+    border: 1px solid var(--grey-500);
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
 }
 
 .title {
