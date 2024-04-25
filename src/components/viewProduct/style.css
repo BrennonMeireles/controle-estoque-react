@@ -10,7 +10,6 @@ main > .title {
 
 .title > h2 > input{
     font-size: 24px;
-    font-weight: bold;
     color: #8b8b8b;
 }
 
@@ -66,33 +65,52 @@ article > .list-product {
     font-size: 30px;
     font-weight: 500;
     text-align: center;
+    
+    border: none;
+    width: 100%;
 }
 
 .data-stock > h3 {
     color: #8b8b8b;
 }
 
+.article-list-product{
+    display: flex;
+    justify-content: space-between;
+    /* border: solid 1px #000; */
+    width: 50%;
+}
+
 .list-product > li {
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
+
     font-family: 'Inter';
     font-weight: 600;
     font-size: 20px;
 }
 
-.list-product > li > p > input, .list-product > li > p > textarea{
+.list-product > li > input, .list-product > li > textarea{
     color: #5552F7;
     font-size: 20px;
     font-weight: bold;
+}
+
+.list-product > li > textarea {
+    width: 285px;
+}
+
+textarea:focus{
+    outline: none;
 }
 
 .data-stock > button {
     width: 390px;
     background-color: #5552F7;
     font-size: 20px;
+    height: 50px;
     color: #fff;
     border: none;
-    height: 50px;
 }
 
 .data-stock > button:hover {

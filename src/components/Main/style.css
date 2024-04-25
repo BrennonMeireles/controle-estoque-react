@@ -13,9 +13,15 @@ article > h1{
     font-size: 30px;
 }
 
+
+
 h1 > input {
     color: #5552F7;
     font-size: 26px;
+}
+
+h1 > span {
+    color: #5552F7;
 }
 
 main > table {
@@ -39,14 +45,16 @@ table > thead {
 
 table > thead > tr > th {
     font-size: 12px;
-    padding: 18px 50px;   
+    padding: 18px 50px;
 }
 
 table > tbody > tr > td {
     font-size: 12px;
-    padding-left: 50px;
-    border-bottom: 1px solid #8b8b8b;
     height: 50px;
+    border-bottom: 1px solid #8b8b8b;
+    text-align: center;
 }
+
+
 
 

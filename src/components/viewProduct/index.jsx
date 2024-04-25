@@ -119,12 +119,12 @@ export default function ViewProduct() {
                         </div>
                     </article>
 
-                    <article>
+                    <article className="article-list-product">
                         <ul className="list-product">
-                            <li>Purchase Cost<p><input type="text" name="preco" value={edicaoProduto.preco} onChange={handleChange} /></p></li>
-                            <li>Brand<p><input type="text" name="marca" value={edicaoProduto.marca} onChange={handleChange} /></p></li>
-                            <li>Color<p><input type="text" name="cor" value={edicaoProduto.cor} onChange={handleChange} /></p></li>
-                            <li>Description<p className="description"><textarea name="descricao" value={edicaoProduto.descricao} onChange={handleChange} /></p></li>
+                            <li>Purchase Cost   <input type="text" name="preco" value={edicaoProduto.preco}      onChange={handleChange} /></li>
+                            <li>Brand           <input type="text" name="marca" value={edicaoProduto.marca}      onChange={handleChange} /></li>
+                            <li>Color           <input type="text" name="cor"   value={edicaoProduto.cor}        onChange={handleChange} /></li>
+                            <li>Description     <textarea name="descricao"      value={edicaoProduto.descricao}  onChange={handleChange} /></li>
                         </ul>
                     </article>
                 </section>
