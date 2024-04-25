@@ -5,12 +5,12 @@ main > .title {
 }
 
 .title > h2 {
-    color: #8b8b8b;
+    color: var(--grey-500);
 }
 
 .title > h2 > input{
     font-size: 24px;
-    color: #8b8b8b;
+    color: var(--grey-500);
 }
 
 section > .banner-stock {
@@ -19,7 +19,7 @@ section > .banner-stock {
 }
 
 .banner-stock > .product-img {
-    border: 1px solid #8b8b8b;
+    border: 1px solid var(--grey-500);
     border-radius: 10px;
     padding: 30px 45px;
     height: 450px;
@@ -39,16 +39,16 @@ article > .list-product {
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    border: 1px solid #8b8b8b;
+    border: 1px solid var(--grey-500);
     border-radius: 10px;
 
     padding-bottom: 20px;
 }
 
 .stock-card > .title-stock {
-    background-color: #f0f0f0;
-    color: #8b8b8b;
-    border-bottom: 1px solid #8b8b8b;
+    background-color: var(--grey-1000);
+    color: var(--grey-500);
+    border-bottom: 1px solid var(--grey-500);
     border-radius: 10px 10px 0px 0px;
     width: 100%;
     padding: 20px 30px;
@@ -71,13 +71,12 @@ article > .list-product {
 }
 
 .data-stock > h3 {
-    color: #8b8b8b;
+    color: var(--grey-500);
 }
 
 .article-list-product{
     display: flex;
     justify-content: space-between;
-    /* border: solid 1px #000; */
     width: 50%;
 }
 
@@ -91,7 +90,7 @@ article > .list-product {
 }
 
 .list-product > li > input, .list-product > li > textarea{
-    color: #5552F7;
+    color: var(--blue-100);
     font-size: 20px;
     font-weight: bold;
 }
@@ -106,21 +105,17 @@ textarea:focus{
 
 .data-stock > button {
     width: 390px;
-    background-color: #5552F7;
+    background-color: var(--blue-100);
     font-size: 20px;
     height: 50px;
-    color: #fff;
+    color: var(--white-1000);
     border: none;
 }
 
 .data-stock > button:hover {
-    background: #0400ff;
-    color: #fff;
+    background: var(--blue-500);
+    color: var(--white-1000);
     transition: 0.2s;
-}
-
-.data-stock > h4 >span {
-    color: red;
 }
 
 section > article {
@@ -128,12 +123,12 @@ section > article {
 }
 
 .action-buttons > button {
-    background-color: #5552F7;
+    background-color: var(--blue-100);
     padding: 12px 30px;
     margin-top: 30px;
 
     font-size: 20px;
-    color: #fff;
+    color: var(--white-1000);
     border: none;
     border-radius: 10px;
     height: 50px;
