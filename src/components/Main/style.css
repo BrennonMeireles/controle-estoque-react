@@ -57,6 +57,11 @@ table > tbody > tr > td {
     text-align: center;
 }
 
+.img-preview {
+    width: 60px;
+    height: auto;
+}
+
 
 
 
