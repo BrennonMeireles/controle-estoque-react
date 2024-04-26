@@ -31,11 +31,13 @@ export default function Main() {
                         <th>Brand</th>
                         <th>Stock in Hand</th>
                         <th>Reorder Level</th>
+                        <th>Image</th>
                     </tr>
                 </thead>
                 <tbody>
                     {produtos.map(produto => (
                         <tr key={produto._id}>  
+                        <td><img className="img-preview" src={produto.imagem} alt="product image" /></td>
                         <td><a href={`controle-estoque-react-omega.vercel.app/product/${produto._id}`}>{produto.nome}</a></td>
                         <td>{produto.sku}</td>
                         <td>{produto.marca}</td>
