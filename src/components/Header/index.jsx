@@ -1,4 +1,3 @@
-
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 
 import "./style.css"
@@ -7,6 +6,7 @@ export default function navbar(){
     return (
             <header>
                 <nav>
+                    <img src="/src/assets/logo.png"></img>
                     <h4>The Boys System</h4>
                     <div>
                         <div className="search-img-box">
