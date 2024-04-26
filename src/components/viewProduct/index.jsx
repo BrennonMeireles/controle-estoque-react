@@ -109,7 +109,7 @@ export default function ViewProduct() {
                                 <div className="data-stock">
                                     <h3>QUANTITY AT HAND</h3>
                                     <input type="number" name="quantidade" value={edicaoProduto.quantidade} onChange={handleChange} />
-                                    <button onClick={handleAdjustStock}>Adjust Stock</button>
+                                    <button onClick={handleAdjustStock}>Adjust</button>
                                     <h4>Status <Quantidade qtdeProduto={produto}  /></h4>
                                 </div>
                             </div>

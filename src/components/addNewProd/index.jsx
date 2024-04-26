@@ -37,6 +37,8 @@ export default function AddNew() {
             // Exibe um alerta informando ao usuário qual campo está faltando
             alert(`Por favor, preencha o campo "${camposFaltando}"!`);
             // Retorna imediatamente para interromper o envio do formulário
+
+            return;
         }
         try {
             const response = await axios.post('http://localhost:3000/', produto); // criando o post pelo axios
