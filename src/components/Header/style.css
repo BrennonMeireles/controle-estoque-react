@@ -3,16 +3,21 @@
 nav {
     display: flex;
     /* justify-content: space-around; */
-    gap: 160px;
+    gap: 20px;
     align-items: center;
     padding: 25px;  
     border: 1px solid var(--grey-500);
+}
 
+nav > img {
+    width: 60px;
+    height: auto;
 }
 
 nav > h4 {
     font-size: 20px;
     font-family: "Inter", sans-serif;
+    padding-right: 50px;
 
 }
 
