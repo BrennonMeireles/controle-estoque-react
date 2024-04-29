@@ -1,1 +1,1 @@
-# App de gerenciamento de estoque em React
+# App de Gerenciamento de Estoque em React
