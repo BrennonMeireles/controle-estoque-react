@@ -16,7 +16,7 @@ export default function Main_search() {
         .catch(error => {
             console.error('Erro ao buscar produtos:', error);
         });
-    }, [produtos])
+    }, [search]);
 
     return (
         <main>
@@ -26,31 +26,34 @@ export default function Main_search() {
                     <span> All Products</span>
                 </h1>
             </article>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Product Name</th>
-                        <th>SKU</th>
-                        <th>Brand</th>
-                        <th>Stock in Hand</th>
-                        <th>Reorder Level</th>
-                        <th>Image</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {produtos.map(produto => (
-                        <tr key={produto._id}>  
-                        <td><img className="img-preview" src={produto.imagem} alt="product image" /></td>
-                        <td><a href={`controle-estoque-react-omega.vercel.app/product/${produto._id}`}>{produto.nome}</a></td>
-                        <td>{produto.sku}</td>
-                        <td>{produto.marca}</td>
-                        <td>{produto.quantidade}</td>
-                        <td>10</td>
-                    </tr>
-                    ))}
-                </tbody>
-
-            </table>
+            {produtos.length === 0 ? (
+                <h1>No products found. Try again</h1>
+            ) : (
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>SKU</th>
+                            <th>Brand</th>
+                            <th>Stock in Hand</th>
+                            <th>Reorder Level</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {produtos.map(produto => (
+                            <tr key={produto._id}>  
+                                <td><img className="img-preview" src={produto.imagem} alt="product image" /></td>
+                                <td><a href={`controle-estoque-react-omega.vercel.app/product/${produto._id}`}>{produto.nome}</a></td>
+                                <td>{produto.sku}</td>
+                                <td>{produto.marca}</td>
+                                <td>{produto.quantidade}</td>
+                                <td>10</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            )}
         </main>
     )
 }

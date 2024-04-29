@@ -14,7 +14,7 @@
     //Declarando a minha model, que é praticamente o meu manipulador do banco de dados. No segundo parametro é a estrutura do meu model
     const Produto = mongoose.model('Produto', {
         nome: String,
-        sku: Number,
+        sku: String,
         descricao: String,
         quantidade: Number,
         marca: String,
