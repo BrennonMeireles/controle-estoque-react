@@ -35,6 +35,13 @@
         return res.send(produto)
     })
 
+    //Método GET para fazer consulta no banco de dados para buscar por produtos com nome semelhante ao termo de pesquisa
+    app.get("/search/:query", async(req, res) => {
+        const query = req.params.query
+        const produto = await Produto.find({ nome: { $regex: query, $options: 'i' } }); // Faz uma consulta no banco de dados usando expressão regular para buscar por produtos com nome semelhante ao termo de pesquisa
+        return res.send(produto);
+    })
+
     //Método POST 
     app.post("/", async (req, res) => {
         const produto = new Produto({   //to instanciando o Model Produto que eu criei e salvando os dados nele
@@ -53,7 +60,7 @@
         return res.send(produto)   //Retornando o produto salvo como resposta
     })
 
-    //Método DELETE
+    //Método DELETE 
     app.delete("/:id", async(req, res) => { 
         const produto = await Produto.findByIdAndDelete(req.params.id)  //aqui estou deletando um cadastro em especifico pelo parametro id vindo da url
         return res.send(produto)
@@ -73,7 +80,7 @@
         }, {
             new: true                                                   //ele retorna este documento atualizado como "novo"
         })
-
+        
         return res.send(produto)
     })
 
