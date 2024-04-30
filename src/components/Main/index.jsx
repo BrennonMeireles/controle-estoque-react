@@ -6,7 +6,7 @@ export default function Main() {
     const [produtos, setProdutos] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/')
+        axios.get('https://api-estoque-rh46.onrender.com/')
         .then((res) => {
             setProdutos(res.data);
         })
