@@ -26,12 +26,12 @@ export default function Main() {
             <table>
                 <thead>
                     <tr>
+                        <th>Image</th>
                         <th>Product Name</th>
                         <th>SKU</th>
                         <th>Brand</th>
                         <th>Stock in Hand</th>
                         <th>Reorder Level</th>
-                        <th>Image</th>
                     </tr>
                 </thead>
                 <tbody>
