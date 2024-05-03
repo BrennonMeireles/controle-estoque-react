@@ -89,11 +89,17 @@ article > .list-product {
     font-size: 20px;
 }
 
-.list-product > li > input, .list-product > li > textarea{
+.list-product > li > input, .list-product > li > textarea, .precoo > input, span{
     color: var(--blue-100);
     font-size: 20px;
     font-weight: bold;
 }
+
+.precoo > input {
+    border: none;
+    margin-left: -10px;
+}
+
 
 .list-product > li > textarea {
     width: 285px;

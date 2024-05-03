@@ -109,7 +109,7 @@ export default function AddNew() {
                     <ul className="list-product">
                         <div className="div-input-list">
                             <label htmlFor="custo">Purchase Coust:</label>
-                            <input className="add-input" type="text" name="preco" value={produto.preco} onChange={handleChange} placeholder="Type the purchase coust" required />
+                            <input className="add-input" type="number" name="preco" value={produto.preco} onChange={handleChange} placeholder="Type the purchase coust" required />
                         </div>
                         <div className="div-input-list">
                             <label htmlFor="color">Color :</label>
