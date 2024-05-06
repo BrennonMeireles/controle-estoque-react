@@ -63,3 +63,14 @@ a {
     text-decoration: none;
     color: var(--black-100);
 }
+
+@media screen and (max-width: 1280px) {
+
+    .sidebar > .sidebar-btn {
+        padding: 20px;
+    }
+
+    .sidebar .sidebar-btn li {
+        width: 200px;
+    }
+}
