@@ -62,8 +62,53 @@ table > tbody > tr > td {
     height: auto;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
+    main {
+        padding: 0px;
+        width: 20vw;
+    }
     
+    main > article {
+        display: flex;
+        padding: 0px;    
+    }
+    
+    article > h1{
+        font-weight: 400;
+        font-size: 8px;
+    }
+    
+    h1 > input {
+        font-size: 10px;
+    }
+    
+    main > table {
+        width: 100%;
+        height: auto;
+    }
+    
+    table > thead {
+        width: 100%;
+
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    table > thead > tr > th {
+        font-size: 12px;
+        padding: 18px 50px;
+    }
+    
+    table > tbody > tr > td {
+        font-size: 12px;
+        height: 50px;
+        border-bottom: 1px solid var(--grey-500);
+        text-align: center;
+    }
+    
+    .img-preview {
+        width: 60px;
+        height: auto;
+    }   
 }
 
 

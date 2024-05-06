@@ -74,3 +74,36 @@ a {
         width: 200px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    
+    .sidebar > .sidebar-btn {
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .sidebar .sidebar-btn li {
+        font-size: 10px;
+        
+        gap: 5px;
+        height: 40px;
+        width: 32px;
+        align-items: center;
+    
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px solid ;
+    }
+
+    .sidebar-btn li > a {
+        display: none;
+    }
+    
+    .sidebar > .sidebar-btn h4 {
+        display: none;
+    }
+    
+    li > svg {
+        width: 20px;
+    }
+}
