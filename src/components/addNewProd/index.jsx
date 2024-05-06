@@ -41,7 +41,7 @@ export default function AddNew() {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:3000/', produto); // criando o post pelo axios
+            const response = await axios.post('https://api-estoque-rh46.onrender.com/', produto); // criando o post pelo axios
             console.log('Produto adicionado:', response.data);
             // Limpar os campos do formulário após o envio bem-sucedido, se necessário
             setProduto({
@@ -58,7 +58,9 @@ export default function AddNew() {
             // Redireciona para a página inicial após o envio bem-sucedido
             navigate('/'); // Redireciona para a página inicial
         } catch (error) {
-            alert('Erro ao adicionar produto:', error);
+            alert('Erro ao adicionar produto:', error, '. Tente novamente');
+
+            return;
         }
     };
 
@@ -92,7 +94,7 @@ export default function AddNew() {
                                 <h3>QUANTITY AT HAND</h3>
                                 <div className="div-stock-input">
                                     <label htmlFor="estoque">Stock :</label>
-                                    <input className="add-input" type="text" name="quantidade" value={produto.quantidade} onChange={handleChange} placeholder="Type the stock" required />
+                                    <input className="add-input" type="number" name="quantidade" value={produto.quantidade} onChange={handleChange} placeholder="Type the stock" required />
                                 </div>
                             </div>
                         </div>

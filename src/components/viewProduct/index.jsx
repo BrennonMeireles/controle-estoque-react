@@ -1,5 +1,3 @@
-//originalllllll
-
 import "./style.css";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
@@ -12,7 +10,7 @@ export default function ViewProduct() {
     const [edicaoProduto, setEdicaoProduto] = useState(null);
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/${id}`)
+        axios.get(`https://api-estoque-rh46.onrender.com/${id}`)
             .then((res) => {
                 setProduto(res.data);
                 setEdicaoProduto(res.data); // Inicializa o estado de edição com os valores atuais do produto
@@ -52,7 +50,7 @@ export default function ViewProduct() {
             return;
         }
 
-        axios.delete(`http://localhost:3000/${id}`)
+        axios.delete(`https://api-estoque-rh46.onrender.com/${id}`)
             .then((res) => {
                 console.log("Produto deletado com sucesso:", res.data);
                 navigate('/');
@@ -68,7 +66,18 @@ export default function ViewProduct() {
     };
 
     const handleAdjustStock = () => {
-        axios.put(`http://localhost:3000/${id}`, edicaoProduto)
+        // Verificar se algum campo obrigatório está vazio
+        if (!edicaoProduto.nome || !edicaoProduto.sku || !edicaoProduto.descricao || !edicaoProduto.quantidade || !edicaoProduto.marca || !edicaoProduto.preco || !edicaoProduto.cor || !edicaoProduto.imagem ) {
+            // Encontra o primeiro campo vazio
+            const camposFaltando = Object.keys(edicaoProduto).find(key => !edicaoProduto[key]);
+
+            // Exibe um alerta informando ao usuário qual campo está faltando
+            alert(`Por favor, preencha o campo "${camposFaltando}"!`);
+            
+            // Retorna imediatamente para interromper o envio do formulário
+            return;
+        }
+        axios.put(`https://api-estoque-rh46.onrender.com/${id}`, edicaoProduto)
             .then((res) => {
                 console.log("Produto atualizado com sucesso:", res.data);
                 // Atualize o estado do produto para refletir as edições
