@@ -30,11 +30,16 @@ Para acessar o projeto no Figma e conferir a tipografia e paletas de cores utili
 
 ## Capturas de Tela
 
-![Tela de Cadastro de Produto](screenshots/cadastro-produto.png)
-*Figura 1: Tela de Cadastro de Produto*
+*Tela de Inicio Home*
+![image](https://github.com/BrennonMeireles/controle-estoque-react/assets/141636246/73896ed2-dc6d-4ece-b5b1-b477b5c92842)
 
-![Tela de Visualização de Produtos](screenshots/visualizacao-produtos.png)
-*Figura 2: Tela de Visualização de Produtos*
+
+*Tela de Visualização do Produto*
+ ![image](https://github.com/BrennonMeireles/controle-estoque-react/assets/141636246/021c07c5-054a-444d-a838-dc179ead5186)
+
+*Tela de Cadastro de Produtos*
+![image](https://github.com/BrennonMeireles/controle-estoque-react/assets/141636246/22379f05-89e2-4df4-81c7-86dfab1f943e)
+
 
 ## Como Contribuir
 
