@@ -79,12 +79,12 @@ export default function AddNew() {
             <section>
                 <article className="banner-stock">
                     <div className="product-img">
-                        <img width="50px" height="50px" src="/src/assets/upload_icon.svg" alt="imagem icon de upload" />
+                        <img width="50px" height="50px" src="/assets/upload_icon.svg" alt="imagem icon de upload" />
                         <input className="add-input-upload" type="text" name="imagem" value={produto.imagem} onChange={handleChange} placeholder="Paste here the image URL" required />
                     </div>
                     <div className="area-stock">
                         <div className="bar-code">
-                            <img src="/src/assets/codigo-de-barras.svg" alt="codigo-de-barras" />
+                            <img src="/assets/codigo-de-barras.svg" alt="codigo-de-barras" />
                         </div>
                         <div className="stock-card">
                             <div className="title-stock">

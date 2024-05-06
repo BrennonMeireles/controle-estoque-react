@@ -21,7 +21,7 @@ export default function navbar(){
     return (
             <header>
                 <nav>
-                    <img src="/src/assets/logo.png"></img>
+                    <img src="/assets/logo.png"></img>
                     <h4><a href="/">The Boys System</a></h4>
                     <div>
                         <div className="search-img-box">

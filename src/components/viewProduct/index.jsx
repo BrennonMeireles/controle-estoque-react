@@ -109,7 +109,7 @@ export default function ViewProduct() {
                         </div>
                         <div className="area-stock">
                             <div className="bar-code">
-                                <img src="/src/assets/codigo-de-barras.svg" alt="codigo-de-barras" />
+                                <img src="/assets/codigo-de-barras.svg" alt="codigo-de-barras" />
                             </div>
                             <div className="stock-card">
                                 <div className="title-stock">
