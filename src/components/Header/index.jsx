@@ -14,7 +14,7 @@ export default function navbar(){
         if(!search) return
 
         // o navigate redireciona para uma rota quando a função é submetida 
-        navigate(`/controle-estoque-react-omega.vercel.app/search/${search}`, { replace: true });
+        navigate(`/search/${search}`, { replace: true });
         setSearch("");
     }
 
