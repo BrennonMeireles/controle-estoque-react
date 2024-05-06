@@ -103,3 +103,19 @@ div > .sku-label {
     font-size: 20px;
 }
 
+@media screen and (max-width: 1280px) {
+    .home-add {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .section-addProd {
+        padding: 30px 50px;
+        width: 70vw;
+    }
+    
+    .div-input > label {
+        font-size: 23px;
+        gap: 20px;
+    }    
+}
