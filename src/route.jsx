@@ -9,9 +9,9 @@ export default function Rotas() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="controle-estoque-react-omega.vercel.app/product/:id"  element={<Product />} />
-                <Route path="controle-estoque-react-omega.vercel.app/add-product"  element={<AddProduct />} />
-                <Route path="controle-estoque-react-omega.vercel.app/search/:search"  element={<Search />} />
+                <Route path="/product/:id"  element={<Product />} />
+                <Route path="/add-product" element={<AddProduct />} />
+                <Route path="/search/:search"  element={<Search />} />
             </Routes>
         </BrowserRouter>
     )

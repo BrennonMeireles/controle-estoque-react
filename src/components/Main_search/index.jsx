@@ -45,7 +45,7 @@ export default function Main_search() {
                         {produtos.map(produto => (
                             <tr key={produto._id}>  
                             <td><img className="img-preview" src={produto.imagem} alt="product image" /></td>
-                            <td><a href={`/controle-estoque-react-omega.vercel.app/product/${produto._id}`}>{produto.nome}</a></td>
+                            <td><a href={`/product/${produto._id}`}>{produto.nome}</a></td>
                             <td>{produto.sku}</td>
                             <td>{produto.marca}</td>
                             <td>{produto.quantidade}</td>
