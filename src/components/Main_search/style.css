@@ -62,6 +62,55 @@ table > tbody > tr > td {
     height: auto;
 }
 
+@media screen and (max-width: 600px) {
+
+    main {
+        padding: 20px;
+    }
+    
+    main > article {
+        display: flex;
+        padding: 0;    
+        padding-bottom: 20px;
+    }
+    
+    article > h1{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    main > table {
+        width: 100%;
+        height: auto;
+
+        border-radius: 10px;
+    }
+    
+    table > thead {
+        width: 100%;
+    }
+    
+    table > thead > tr > th {
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+    
+    table > tbody > tr > td {
+        font-size: 10px;
+        height: 50px;
+    }
+    
+    .img-preview {
+        width: 40px;
+    }
+
+    .title-remove-mobile{
+        display: none;
+    }
+    
+}
+
+
 
 
 

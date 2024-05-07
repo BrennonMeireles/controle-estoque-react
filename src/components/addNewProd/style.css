@@ -119,3 +119,73 @@ div > .sku-label {
         gap: 20px;
     }    
 }
+
+
+@media screen and (max-width: 600px) {
+    
+    .home-add {
+        gap: 0px;
+    }
+    
+    .section-addProd {
+        padding: 10px 20px;
+        width: 100vw;
+    }
+    
+    .title > .div-input {
+        margin-bottom: 20px;
+    }
+    
+    .div-input > label {
+        font-size: 16px;
+        width: 60px;
+    }
+    
+    .div-input > .add-input {
+        font-size: 14px;
+        height: 20px;
+        width: 70vw;
+    }
+    
+    .sku-input {
+        font-size: 14px;
+        height: 20px;
+        width: 70vw;
+    }
+    
+    div > .sku-label {
+        font-size: 16px;
+    }
+    
+    .section-addProd > section > article > .product-img {
+        width: 75vw;
+        gap: 10px;
+    }
+    
+    .add-input-upload {
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    .input-list > ul > .div-input-list > label {
+        font-size: 18px;
+        width: 60vw;
+    }
+    
+    .input-list > ul > .div-input-list > input {
+        border: none;
+        font-size: 15px;
+    }
+    
+    .list-product {
+        width: 290px;
+    }
+    
+    .div-stock-input > label {
+        font-size: 18px;
+    }
+    
+    .div-stock-input > input{
+        font-size: 16px;
+    }
+}
