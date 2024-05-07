@@ -20,6 +20,31 @@ export default function Main_search() {
         });
     }, [search])
 
+    const Quantidade = ({ qtdeProduto }) => {
+        let qtdeProdutos = qtdeProduto.quantidade;
+    
+        let statusText = '';
+        let statusStyle = {};
+    
+        if (qtdeProdutos == 0) {
+            statusText = 'sold off';
+            statusStyle = { color: '#800' };
+        } else if (qtdeProdutos <= 25) {
+            statusText = 'low stock';
+            statusStyle = { color: '#f00' };
+        } else if (qtdeProdutos <= 50) {
+            statusText = 'medium stock';
+            statusStyle = { color: '#ff0' };
+        } else {
+            statusText = 'full stock';
+            statusStyle = { color: '#0f0', fontWeight: 'bold' };
+        }
+    
+        return (
+            <h4 style={statusStyle}><span>{statusText}</span></h4>
+        );
+    }  
+
     return (
         <main>
             <article>
@@ -34,10 +59,10 @@ export default function Main_search() {
                     <thead>
                         <tr>
                             <th>Product Name</th>
-                            <th>SKU</th>
+                            <th className="title-remove-mobile">SKU</th>
                             <th>Brand</th>
                             <th>Stock in Hand</th>
-                            <th>Reorder Level</th>
+                            <th className="title-remove-mobile">Reorder Level</th>
                             <th>Image</th>
                         </tr>
                     </thead>
@@ -46,10 +71,10 @@ export default function Main_search() {
                             <tr key={produto._id}>  
                             <td><img className="img-preview" src={produto.imagem} alt="product image" /></td>
                             <td><a href={`/product/${produto._id}`}>{produto.nome}</a></td>
-                            <td>{produto.sku}</td>
+                            <td className="title-remove-mobile">{produto.sku}</td>
                             <td>{produto.marca}</td>
-                            <td>{produto.quantidade}</td>
-                            <td>10</td>
+                            <td className="title-remove-mobile">{produto.quantidade}</td>
+                            <td><Quantidade qtdeProduto={produto} /></td>
                         </tr>
                         ))}
                     </tbody>
