@@ -64,6 +64,24 @@ a {
   color: var(--black-100);
 }
 
+.house-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 30px;
+  height: auto;
+}
+
+.cub-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 26px;
+  height: auto;
+}
+
 @media screen and (max-width: 1280px) {
   .sidebar > .sidebar-btn {
     padding: 20px;
@@ -110,6 +128,14 @@ a {
 
   li > svg {
     width: 20px;
+  }
+
+  .house-icon {
+    font-size: 22px;
+  }
+
+  .cub-icon {
+    font-size: 22px;
   }
 }
 
