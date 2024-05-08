@@ -1,116 +1,154 @@
 section > .sidebar {
-    display: flex;
+  display: flex;
 }
 
 .sidebar > .sidebar-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 30px;
-    padding: 25px;
-    height: 100vh;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 30px;
+  padding: 25px;
+  height: 100vh;
+  list-style: none;
 }
 
 .sidebar .sidebar-btn li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-    font-size: 20px;
-    
-    gap: 15px;
-    height: 50px;
-    width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    padding: 20px 15px;
-    border-radius: 10px;
+  font-size: 20px;
+
+  gap: 15px;
+  height: 50px;
+  width: 250px;
+
+  padding: 20px 15px;
+  border-radius: 10px;
 }
 
 .sidebar > .sidebar-btn h4 {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 0.05em;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.05em;
 
-    padding-left: 15px;
-    color: var(--grey-500);
+  padding-left: 15px;
+  color: var(--grey-500);
 }
 
 li > svg {
-    color: var(--black-100);
-    width: 30px;
-    height: auto;
+  color: var(--black-100);
+  width: 30px;
+  height: auto;
 }
 
 .sidebar > .sidebar-btn > li:hover {
-    background: var(--blue-100);
-    color: var(--white-1000);
-    transition: 0.2s;
+  background: var(--blue-100);
+  color: var(--white-1000);
+  transition: 0.2s;
 }
 
 .sidebar > .sidebar-btn > li:hover svg {
-    color: var(--white-1000);
-    transition: 0.2s;
+  color: var(--white-1000);
+  transition: 0.2s;
 }
 
 .sidebar > .sidebar-btn > li:hover a {
-    color: var(--white-1000);
-    transition: 0.2s;
+  color: var(--white-1000);
+  transition: 0.2s;
 }
 
 a {
-    text-decoration: none;
-    color: var(--black-100);
+  text-decoration: none;
+  color: var(--black-100);
 }
 
 @media screen and (max-width: 1280px) {
+  .sidebar > .sidebar-btn {
+    padding: 20px;
+  }
 
-    .sidebar > .sidebar-btn {
-        padding: 20px;
-    }
-
-    .sidebar .sidebar-btn li {
-        width: 200px;
-    }
+  .sidebar .sidebar-btn li {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    
-    .sidebar > .sidebar-btn {
-        gap: 20px;
-        padding: 10px;
-    }
-    
-    .sidebar .sidebar-btn li {
-        font-size: 10px;
-        
-        gap: 5px;
-        height: 40px;
-        width: 32px;
-        align-items: center;
-    
-        padding: 5px;
-        border-radius: 6px;
-        border: 1px solid ;
-    }
+  .sidebar > .sidebar-btn {
+    gap: 20px;
+    padding: 10px;
+  }
 
-    li a:last-of-type {
-        display: none;
-    }
-    
-    .sidebar > .sidebar-btn h4 {
-        display: none;
-    }
+  .sidebar .sidebar-btn li {
+    font-size: 10px;
 
-    li > a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-    }
+    gap: 5px;
+    height: 40px;
+    width: 32px;
+    align-items: center;
 
-    li > svg {
-        width: 20px;
-    }
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid;
+  }
+
+  li a:last-of-type {
+    display: none;
+  }
+
+  .sidebar > .sidebar-btn h4 {
+    display: none;
+  }
+
+  li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  li > svg {
+    width: 20px;
+  }
+}
+
+/* Estilos para dispositivos médios (ex: tablets em modo retrato) */
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  .sidebar > .sidebar-btn {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .sidebar .sidebar-btn li {
+    font-size: 20px;
+
+    gap: 5px;
+    height: 45px;
+    width: 42px;
+    align-items: center;
+
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid;
+  }
+
+  li a:last-of-type {
+    display: none;
+  }
+
+  .sidebar > .sidebar-btn h4 {
+    display: none;
+  }
+
+  li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  li > svg {
+    width: 20px;
+  }
 }

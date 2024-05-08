@@ -1,191 +1,204 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .home-add {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
 .section-addProd {
-    padding: 100px 50px;
-    width: 100vw;
-    border: 1px solid var(--grey-500);
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
+  padding: 100px 50px;
+  width: 100vw;
+  border: 1px solid var(--grey-500);
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .title > .div-input {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .div-input > label {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .div-input > .add-input {
-    height: 30px;
-    font-size: 20px;
-    border: none;
+  height: 30px;
+  font-size: 20px;
+  border: none;
 }
 
 .sku-input {
-    font-size: 15px;
-    height: 30px;
-    border: none;
+  font-size: 15px;
+  height: 30px;
+  border: none;
 }
 
 div > .sku-label {
-    font-size: 20px;
-    color: var(--grey-500);
+  font-size: 20px;
+  color: var(--grey-500);
 }
 
 .section-addProd > section > article > .product-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  gap: 30px;
 }
 
 .add-input-upload {
-    width: auto;
-    height: 30px;
-    font-size: 20px;
-    border: none;
+  width: auto;
+  height: 30px;
+  font-size: 20px;
+  border: none;
 }
 
 .input-list > ul > .div-input-list > label {
-    font-size: 25px;
-    width: 300px;
+  font-size: 25px;
+  width: 300px;
 }
 
 .input-list > ul > .div-input-list > input {
-    border: none;
-    font-size: 15px;
+  border: none;
+  font-size: 15px;
 }
 
 .div-input-list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .list-product {
-    width: 1000px;
+  width: 1000px;
 }
 
 .div-stock-input {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .div-stock-input > label {
-    margin-left: 30px;
-    width: 90px;
-    font-size: 20px;
-    font-weight: bold;
+  margin-left: 30px;
+  width: 90px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.div-stock-input > input{
-    border: none;
-    font-size: 20px;
+.div-stock-input > input {
+  border: none;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1280px) {
-    .home-add {
-        display: flex;
-        gap: 30px;
-    }
-    
-    .section-addProd {
-        padding: 30px 50px;
-        width: 70vw;
-    }
-    
-    .div-input > label {
-        font-size: 23px;
-        gap: 20px;
-    }    
+  .home-add {
+    display: flex;
+    gap: 30px;
+  }
+
+  .section-addProd {
+    padding: 30px 50px;
+    width: 70vw;
+  }
+
+  .div-input > label {
+    font-size: 23px;
+    gap: 20px;
+  }
 }
 
-
 @media screen and (max-width: 600px) {
-    
-    .home-add {
-        gap: 0px;
-    }
-    
-    .section-addProd {
-        padding: 10px 20px;
-        width: 100vw;
-    }
-    
-    .title > .div-input {
-        margin-bottom: 20px;
-    }
-    
-    .div-input > label {
-        font-size: 16px;
-        width: 60px;
-    }
-    
-    .div-input > .add-input {
-        font-size: 14px;
-        height: 20px;
-        width: 70vw;
-    }
-    
-    .sku-input {
-        font-size: 14px;
-        height: 20px;
-        width: 70vw;
-    }
-    
-    div > .sku-label {
-        font-size: 16px;
-    }
-    
-    .section-addProd > section > article > .product-img {
-        width: 75vw;
-        gap: 10px;
-    }
-    
-    .add-input-upload {
-        width: 100%;
-        font-size: 12px;
-    }
-    
-    .input-list > ul > .div-input-list > label {
-        font-size: 18px;
-        width: 60vw;
-    }
-    
-    .input-list > ul > .div-input-list > input {
-        border: none;
-        font-size: 15px;
-    }
-    
-    .list-product {
-        width: 290px;
-    }
-    
-    .div-stock-input > label {
-        font-size: 18px;
-    }
-    
-    .div-stock-input > input{
-        font-size: 16px;
-    }
+  .home-add {
+    gap: 0px;
+  }
+
+  .section-addProd {
+    padding: 10px 20px;
+    width: 100vw;
+  }
+
+  .title > .div-input {
+    margin-bottom: 20px;
+  }
+
+  .div-input > label {
+    font-size: 16px;
+    width: 60px;
+  }
+
+  .div-input > .add-input {
+    font-size: 14px;
+    height: 20px;
+    width: 70vw;
+  }
+
+  .sku-input {
+    font-size: 14px;
+    height: 20px;
+    width: 70vw;
+  }
+
+  div > .sku-label {
+    font-size: 16px;
+  }
+
+  .section-addProd > section > article > .product-img {
+    width: 75vw;
+    gap: 10px;
+  }
+
+  .add-input-upload {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .input-list > ul > .div-input-list > label {
+    font-size: 18px;
+    width: 60vw;
+  }
+
+  .input-list > ul > .div-input-list > input {
+    border: none;
+    font-size: 15px;
+  }
+
+  .list-product {
+    width: 290px;
+  }
+
+  .div-stock-input > label {
+    font-size: 18px;
+  }
+
+  .div-stock-input > input {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  .home-add {
+    gap: 0px;
+  }
+
+  .div-input > label {
+    width: 120px;
+  }
+
+  .div-input > .add-input {
+    height: 20px;
+    width: 70vw;
+  }
 }
