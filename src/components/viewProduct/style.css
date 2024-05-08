@@ -159,3 +159,78 @@ button:hover{
     width: auto;
     height: 100%;
 }
+
+@media screen and (max-width: 600px) {
+    main > .title {
+        gap: 0px;
+    }
+
+    .title > h1 {
+        font-size: 18px;
+    }
+
+    .title >h1 > input {
+        font-size: 16px;
+    }
+    
+    .title > h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .title > h2 > input{
+        font-size: 18px;
+    }
+    
+    section > .banner-stock {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 75vw;
+    }
+    
+    .banner-stock > .product-img {
+        padding: 30px;
+        height: 280px;
+        width: 75vw;
+        margin-bottom: 30px;
+    }
+
+    .bar-code img {
+        width: 75vw;
+    }
+    
+    article > .list-product {
+        gap: 10px;
+    }
+    
+    .data-stock > input {
+        font-size: 25px;
+    }
+    
+    .list-product > li {
+        font-size: 18px;
+        text-align: center;
+        width: 280px;
+        /* border: 1px solid;         */
+    }
+    
+    .list-product > li > input, .list-product > li > textarea, .precoo > input, b{
+        font-size: 18px;
+        width: 100px;
+    }
+    .data-stock > button {
+        width: 75vw;
+    }
+    
+    .action-buttons > button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        font-size: 16px;
+    }
+    
+    .list-product {
+        /* width: 75vw; */
+    }
+}
