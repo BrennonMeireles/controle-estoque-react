@@ -8,9 +8,16 @@ export default function Sidebar() {
         <section>
             <article className="sidebar">
                 <ul className="sidebar-btn">
-                    <li><LiaHomeSolid /> <a href="/">Home</a></li>
+                    <li>
+                        <a className="house-icon" href="/"><LiaHomeSolid /></a>
+                        <a href="/" title="Home">Home</a>
+                    </li>
                     <h4>INVENTORY</h4>
-                    <li><BsBox /><a href="/add-product">Add Product</a></li>
+                    
+                    <li>
+                        <a  className="cub-icon" href="/add-product"><BsBox /></a>
+                        <a href="/add-product">Add Product</a>
+                    </li>
                 </ul>
             </article>
         </section>

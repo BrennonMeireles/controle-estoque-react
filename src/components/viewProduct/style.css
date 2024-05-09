@@ -1,161 +1,277 @@
 main > .title {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .title > h2 {
-    color: var(--grey-500);
+  color: var(--grey-500);
 }
 
-.title > h2 > input{
-    font-size: 24px;
-    color: var(--grey-500);
+.title > h2 > input {
+  font-size: 24px;
+  color: var(--grey-500);
 }
 
 section > .banner-stock {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
 .banner-stock > .product-img {
-    border: 1px solid var(--grey-500);
-    border-radius: 10px;
-    padding: 30px 45px;
-    height: 450px;
-    margin-bottom: 60px;
+  border: 1px solid var(--grey-500);
+  border-radius: 10px;
+  padding: 30px 45px;
+  height: 450px;
+  margin-bottom: 60px;
 }
 
 article > .list-product {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 10px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
 }
 
 .area-stock > .stock-card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    border: 1px solid var(--grey-500);
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid var(--grey-500);
+  border-radius: 10px;
 
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .stock-card > .title-stock {
-    background-color: var(--grey-1000);
-    color: var(--grey-500);
-    border-bottom: 1px solid var(--grey-500);
-    border-radius: 10px 10px 0px 0px;
-    width: 100%;
-    padding: 20px 30px;
+  background-color: var(--grey-1000);
+  color: var(--grey-500);
+  border-bottom: 1px solid var(--grey-500);
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  padding: 20px 30px;
 }
 
 .data-stock {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
 }
 
 .data-stock > input {
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-    
-    border: none;
-    width: 100%;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+
+  border: none;
+  width: 100%;
 }
 
 .data-stock > h3 {
-    color: var(--grey-500);
+  color: var(--grey-500);
 }
 
-.article-list-product{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
+.article-list-product {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .list-product > li {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 20px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
 }
 
-.list-product > li > input, .list-product > li > textarea, .precoo > input, b{
-    color: var(--blue-100);
-    font-size: 20px;
-    font-weight: bold;
+.list-product > li > input,
+.list-product > li > textarea,
+.precoo > input,
+b {
+  color: var(--blue-100);
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .precoo > input {
-    border: none;
-    margin-left: -10px;
+  border: none;
+  margin-left: -10px;
 }
-
 
 .list-product > li > textarea {
-    width: 285px;
+  width: 285px;
 }
 
-textarea:focus{
-    outline: none;
+textarea:focus {
+  outline: none;
 }
 
 .data-stock > button {
-    width: 390px;
-    background-color: var(--blue-100);
-    font-size: 20px;
-    height: 50px;
-    color: var(--white-1000);
-    border: none;
+  width: 390px;
+  background-color: var(--blue-100);
+  font-size: 20px;
+  height: 50px;
+  color: var(--white-1000);
+  border: none;
 }
 
 .data-stock > button:hover {
-    background: var(--blue-500);
-    color: var(--white-1000);
-    transition: 0.2s;
+  background: var(--blue-500);
+  color: var(--white-1000);
+  transition: 0.2s;
 }
 
 section > article {
-    display: flex;
+  display: flex;
 }
 
 .action-buttons > button {
-    background-color: var(--blue-100);
-    padding: 12px 30px;
-    margin-top: 30px;
+  background-color: var(--blue-100);
+  padding: 12px 30px;
+  margin-top: 30px;
 
-    font-size: 20px;
-    color: var(--white-1000);
-    border: none;
-    border-radius: 10px;
-    height: 50px;
+  font-size: 20px;
+  color: var(--white-1000);
+  border: none;
+  border-radius: 10px;
+  height: 50px;
 }
 
-button:hover{
-    background: var(--blue-500);
-    color: var(--white-1000);
-    transition: 0.2s;
+button:hover {
+  background: var(--blue-500);
+  color: var(--white-1000);
+  transition: 0.2s;
 }
 
 .action-buttons {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bar-code {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .product-img-view {
-    width: auto;
-    height: 100%;
+  width: auto;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  main > .title {
+    gap: 0px;
+  }
+
+  .title > h1 {
+    font-size: 18px;
+  }
+
+  .title > h1 > input {
+    font-size: 16px;
+  }
+
+  .title > h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .title > h2 > input {
+    font-size: 18px;
+  }
+
+  section > .banner-stock {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 75vw;
+  }
+
+  .banner-stock > .product-img {
+    padding: 30px;
+    height: 280px;
+    width: 75vw;
+    margin-bottom: 30px;
+  }
+
+  .bar-code img {
+    width: 75vw;
+  }
+
+  article > .list-product {
+    gap: 10px;
+  }
+
+  .data-stock > input {
+    font-size: 25px;
+  }
+
+  .list-product > li {
+    font-size: 18px;
+    text-align: center;
+    width: 280px;
+    /* border: 1px solid;         */
+  }
+
+  .list-product > li > input,
+  .list-product > li > textarea,
+  .precoo > input,
+  b {
+    font-size: 18px;
+    width: 100px;
+  }
+  .data-stock > button {
+    width: 75vw;
+  }
+
+  .action-buttons > button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 16px;
+  }
+}
+
+/* Estilos para dispositivos médios (ex: tablets em modo retrato) */
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  section > .banner-stock {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 80vw;
+  }
+
+  .banner-stock > .product-img {
+    padding: 30px;
+    height: 600px;
+    width: 78vw;
+    margin-bottom: 30px;
+  }
+
+  .bar-code {
+    text-align: center;
+  }
+
+  .bar-code img {
+    width: 60vw;
+  }
+
+  .list-product > li > input,
+  .list-product > li > textarea,
+  .precoo > input,
+  b {
+    width: 600px;
+  }
+  .data-stock > button {
+    width: 80vw;
+  }
+
+  .action-buttons > button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }

@@ -22,7 +22,7 @@ export default function navbar(){
             <header>
                 <nav>
                     <img src="/assets/logo.png"></img>
-                    <h4><a href="/">The Boys System</a></h4>
+                    <h4><a href="/">CubeStock</a></h4>
                     <div>
                         <div className="search-img-box">
                             <HiMiniMagnifyingGlass />

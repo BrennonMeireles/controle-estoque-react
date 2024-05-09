@@ -1,67 +1,150 @@
 main {
-    padding: 50px;
-    width: 100vw;
-    border: 1px solid var(--grey-500);
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
+  padding: 50px;
+  width: 100vw;
+  border: 1px solid var(--grey-500);
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
 }
 
 main > article {
-    display: flex;
-    padding: 30px 30px 30px 0px;    
+  display: flex;
+  padding: 30px 30px 30px 0px;
 }
 
-article > h1{
-    font-weight: 400;
-    font-size: 30px;
+article > h1 {
+  font-weight: 400;
+  font-size: 30px;
 }
 
 h1 > input {
-    color: var(--blue-100);
-    font-size: 26px;
+  color: var(--blue-100);
+  font-size: 26px;
 }
 
 h1 > span {
-    color: var(--blue-100);
+  color: var(--blue-100);
 }
 
 main > table {
-    width: 100%;
-    height: auto;
-    
-    border-collapse: collapse;
-    border: 1px solid var(--grey-500);
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+
+  border-collapse: collapse;
+  border: 1px solid var(--grey-500);
+  border-radius: 10px;
 }
 
 table > thead {
-    width: 100%;
-    
-    color: var(--grey-500);
+  width: 100%;
 
-    background-color: #f0f0f0;
-    border-bottom: 1px solid var(--grey-500);
-    border-radius: 10px 10px 0px 0px;
+  color: var(--grey-500);
+
+  background-color: #f0f0f0;
+  border-bottom: 1px solid var(--grey-500);
+  border-radius: 10px 10px 0px 0px;
 }
 
 table > thead > tr > th {
-    font-size: 12px;
-    padding: 18px 50px;
+  font-size: 12px;
+  padding: 18px 50px;
 }
 
 table > tbody > tr > td {
-    font-size: 12px;
-    height: 50px;
-    border-bottom: 1px solid var(--grey-500);
-    text-align: center;
+  font-size: 12px;
+  height: 50px;
+  border-bottom: 1px solid var(--grey-500);
+  text-align: center;
 }
 
 .img-preview {
-    width: 60px;
-    height: auto;
+  width: 60px;
+  height: auto;
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
 
+  main > article {
+    display: flex;
+    padding: 0;
+    padding-bottom: 20px;
+  }
 
+  article > h1 {
+    font-weight: 400;
+    font-size: 16px;
+  }
 
+  main > table {
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+  }
+
+  table > thead {
+    width: 100%;
+  }
+
+  table > thead > tr > th {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+
+  table > tbody > tr > td {
+    font-size: 10px;
+    height: 50px;
+  }
+
+  .img-preview {
+    width: 40px;
+  }
+
+  .title-remove-mobile {
+    display: none;
+  }
+}
+
+/* Estilos para dispositivos médios (ex: tablets em modo retrato) */
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  main {
+    padding: 30px;
+  }
+
+  main > article {
+    display: flex;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
+  article > h1 {
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  main > table {
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+  }
+
+  table > thead {
+    width: 100%;
+  }
+
+  table > thead > tr > th {
+    padding: 15px 10px;
+  }
+
+  table > tbody > tr > td {
+    height: 50px;
+  }
+
+  .title-remove-mobile {
+    display: none;
+  }
+}
