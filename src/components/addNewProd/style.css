@@ -58,6 +58,15 @@ div > .sku-label {
   gap: 30px;
 }
 
+.product-img > input {
+  cursor: pointer;
+}
+
+.product-img > input:hover {
+  border-bottom: 3px solid;
+  transition: 0.1s none;
+}
+
 .add-input-upload {
   width: auto;
   height: 30px;

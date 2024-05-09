@@ -37,7 +37,7 @@ export default function Main_search() {
             statusStyle = { color: '#f00' };
         } else if (qtdeProdutos <= 50) {
             statusText = 'medium stock';
-            statusStyle = { color: '#ff0' };
+            statusStyle = { color: '#f1f102' };
         } else {
             statusText = 'full stock';
             statusStyle = { color: '#0f0', fontWeight: 'bold' };

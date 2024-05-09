@@ -28,16 +28,16 @@ export default function Main() {
     
         if (qtdeProdutos == 0) {
             statusText = 'sold off';
-            statusStyle = { color: '#800' };
+            statusStyle = { color: '#ac0000' };
         } else if (qtdeProdutos <= 25) {
             statusText = 'low stock';
             statusStyle = { color: '#f00' };
         } else if (qtdeProdutos <= 50) {
             statusText = 'medium stock';
-            statusStyle = { color: '#ff0' };
+            statusStyle = { color: '#f3f300' };
         } else {
             statusText = 'full stock';
-            statusStyle = { color: '#0f0', fontWeight: 'bold' };
+            statusStyle = { color: '#03d003', fontWeight: 'bold' };
         }
     
         return (

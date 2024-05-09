@@ -1,5 +1,5 @@
 main {
-  padding: 50px;
+  padding: 0px 50px 50px 50px;
   width: 100vw;
   border: 1px solid var(--grey-500);
   border-top: 0;
@@ -37,7 +37,7 @@ main > table {
 
 table > thead {
   width: 100%;
-
+  
   color: var(--grey-500);
 
   background-color: #f0f0f0;
@@ -46,19 +46,21 @@ table > thead {
 }
 
 table > thead > tr > th {
-  font-size: 12px;
-  padding: 18px 50px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 25px 50px;
 }
 
 table > tbody > tr > td {
-  font-size: 12px;
+  font-size: 13px;
   height: 50px;
   border-bottom: 1px solid var(--grey-500);
   text-align: center;
 }
 
 .img-preview {
-  width: 60px;
+  width: 90px;
+  padding: 4px;
   height: auto;
 }
 
